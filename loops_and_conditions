@@ -18,6 +18,7 @@ if number % 2 == 0:
 else:
     print("Odd")
 
+
 # 2 EXERCICIO
 
 # 1. Recebe a entrada e converte para número inteiro.
@@ -73,7 +74,7 @@ print("sum of numbers entered:", total_sum)
 #4 EXRCICIO
 
 # 1. Criamos uma lista vazia chamada 'all_ratings' para guardar as 10 notas.
-# 2. Loop para repetir 10 vezes usando o truque dos indices aprendemos com o matam
+# 2. fazemos uma função Loop para repetir 10 vezes usando o truque dos indices aprendemos com o matam
     # 3. Validação: não deixa passar nota fora de 1-5.
     # 4. .append() adiciona a nota válida dentro da nossa lista
 
