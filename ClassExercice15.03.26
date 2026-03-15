@@ -1,0 +1,81 @@
+'''
+1
+["apple","banana","kiwi","grape","kiwi"] -> {"apple":5, "banana":6, "kiwi":4, "grape":5 }
+'''
+def get_len_word(list1: list) -> dict:
+    '''
+
+    :param list1: list of words
+    :return: dict { <word>: <how many letters (len) > }
+    '''
+    pass
+
+'''
+
+
+RESOLUTION FOR QUESTION 1
+
+list1 = ["apple","banana","kiwi","grape","kiwi"]
+
+def get_len_word(list1: list) -> dict:
+
+    result = {}
+    
+    for word in list1:
+        word_length = len(word)
+        result[word] = word_length
+        
+    return result 
+
+OR 
+
+def get_len_word(list1: list) -> dict:
+  
+    return {word: len(word) for word in list1}
+
+
+
+'''
+2
+grades = {"Tom":80, "Anna":95, "John":70} -> (Anna , 95)
+'''
+def get_max(dict1: dict) -> tuple:
+    '''
+
+    :param dict1: {<name>: <grade> ... }
+    :return: (<name>, <grade>) of the max student
+    '''
+    pass
+
+'''
+
+
+RESOLUTION FOR QUESTION 2
+
+grades = {"Tom":80, "Anna":95, "John":70} -> (Anna , 95)
+
+
+def get_max(dict1: dict) -> tuple:
+    max_name = None
+    max_grade = -1 
+'''
+We turn the dict into a list of Tuples using .items()
+'''
+
+    for name, grade in grades.items():
+        if grade > max_grade:
+            max_grade = grade
+            max_name = name
+            
+    return (max_name, max_grade)
+
+OR
+
+def get_max(dict1: dict) -> tuple:
+    # Finds the key with the highest value and returns (key, value)
+    best_student = max(dict1, key=dict1.get)
+    return (best_student, dict1[best_student])
+
+
+
+
